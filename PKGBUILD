@@ -29,7 +29,7 @@ arch=(
 )
 _http="https://github.com"
 _ns="ethereum"
-url="${_https}/${_ns}/${_pkg}"
+url="${_http}/${_ns}/${_pkg}"
 license=(
   'Apache'
 )
@@ -61,7 +61,7 @@ elif [[ "${_git}" == false ]]; then
   fi
 fi
 source=(
-  "${_tar}"
+  "${_src}"
 )
 sha256sums=(
   "${_sum}"
