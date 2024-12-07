@@ -10,6 +10,7 @@ _offline="false"
 _pkg=evmone
 pkgname="${_pkg}"
 pkgver=0.13.0
+_commit="7961b60012220bf25d15569acd18c68ced96473b"
 pkgrel=1
 _pkgdesc=(
   "Fast Ethereum Virtual"
@@ -72,7 +73,7 @@ build ()
   echo \
     "${PWD}"
   cd \
-    "${pkgname}"
+    "${_tarname}"
   git \
     submodule \
       update \
@@ -91,7 +92,7 @@ build ()
 package ()
 {
   cd \
-    "${pkgname}/build"
+    "${_tarname}/build"
   make \
     DESTDIR="${pkgdir}" \
     prefix=/usr \
