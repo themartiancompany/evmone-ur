@@ -67,6 +67,10 @@ source=(
 sha256sums=(
   "${_sum}"
 )
+validpgpkeys=(
+  # Paweł Bylica <pawel@ethereum.org>
+  "7A0C037434FE77EF"
+	)
 
 build ()
 {
