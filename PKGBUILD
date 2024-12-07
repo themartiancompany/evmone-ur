@@ -5,7 +5,7 @@
 # Maintainer: Marenz <aur@supradigital.org>
 # Maintainer: Kamil Śliwak <cameel2+aur/at/gmail/com>
 
-_git="true"
+_git="false"
 _offline="false"
 _pkg=evmone
 pkgname="${_pkg}"
@@ -58,7 +58,7 @@ elif [[ "${_git}" == false ]]; then
     _sum="d4f4179c6e4ce1702c5fe6af132669e8ec4d0378428f69518f2926b969663a91"
   elif [[ "${_tag_name}" == "commit" ]]; then
     _src="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum='955be86b162169b67c4497bfc3db2d03263f2e47a48a3bb6586d59b014595c31'
+    _sum='38337c34e0ae4df17ebf4c2b08b7f54f1a05a9ac8d60d9fea4eef1a16d5b406e'
   fi
 fi
 source=(
